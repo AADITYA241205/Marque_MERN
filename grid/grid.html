@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid{
+            display: grid;
+            grid-template-columns: repeat(3, 300px);
+            grid-template-rows: repeat(3, 200px);
+            gap: 16px;
+            background-color: rgb(53, 0, 93);
+            border: 1px solid black;
+            padding: 20px;
+            width: 930px;
+            border-radius: 20px;
+        }
+        .sq1{
+            background-color: rgb(134, 0, 237);
+            border: 1px solid black;
+            border-radius: 20px;
+        }
+        .sq1{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #sq6{
+            background-color: white;
+            grid-row: 2 / 4;
+            grid-column: 3 / 4;
+            display: flex;
+            align-items: end;
+            font-size: 100px;
+        }
+        #sq5{
+            background-color:rgb(82, 8, 231);
+            font-size: 60px;
+            color: white;
+            font-weight: bold;
+        }
+        #sq7{
+            background-color: rgb(134, 0, 237);
+            grid-column: 1 / 3;
+            display: flex;
+            justify-content: start;
+            align-items: start;
+            padding: 20px;
+            font-size: 40px;
+            color: white;
+        }
+        #sq2{
+            FONT-SIZE: 100px;
+            COLOR: WHITE;
+        }
+        #sq4{
+            FONT-SIZE: 100px;
+            COLOR: WHITE;
+        }
+        #sq3{
+            FONT-SIZE: 100px;
+            COLOR: WHITE;
+        }
+        .logo{
+            width: 100px;
+            height: 50px;
+            background-color: rgb(170, 87, 248);
+            border-radius: 10px;
+            border: 1px solid black;
+            margin: 10px;
+            background-repeat: no-repeat;
+            padding-top: 2px;
+        }
+    </style>
+    </head>
+<body>
+    <div class="grid">
+        <div class="sq1" id="sq01">
+            <div class="logo" style="background-image: url(https://store-images.s-microsoft.com/image/apps.37935.9007199266245907.b029bd80-381a-4869-854f-bac6f359c5c9.91f8693c-c75b-4050-a796-63e1314d18c9?h=210); background-size: contain;"></div>
+            <div class="logo" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjbxj3iLM4tP144QHpLMbEO4UbfFZCOdSvXw&s); background-size: cover;"></div>
+            <div class="logo" style="background-image: url(https://play-lh.googleusercontent.com/bh871pyeIpMnJxGYKmTJCm-5VwIYrPUYhHQcCky0B-DpsMoPCWVSDKz0Ic7MLsGuLmS4F_-iE6BilqsUM2DloA); background-size: contain;"></div>
+            <div class="logo" style="background-image: url(https://storage.googleapis.com/gweb-uniblog-publish-prod/images/YouTube.width-500.format-webp.webp); background-size: contain;"></div>
+        </div>
+        <div class="sq1" id="sq2">25K</div>
+        <div class="sq1" id="sq3">50K</div>
+        <div class="sq1" id="sq4">1,538</div>
+        <div class="sq1" id="sq5">DESIGN</div>
+        <div class="sq1" id="sq6">200K</div>
+        <div class="sq1" id="sq7">A place to learn UI Design & Web Design</div>
+    </div>
+</body>
+</html>
