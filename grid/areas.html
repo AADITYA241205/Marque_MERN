@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid{
+            display: grid;
+            grid-template-columns: 100px 100px 100px;
+            grid-template-rows: 100px 100px 100px;
+            grid-template-areas:
+                "header header header"
+                "sidebar main aside"
+                "footer footer footer";
+            gap: 12px;
+            height: 400px;
+        }
+        .header{
+            background-color: yellow;
+            grid-area: header;
+        }
+        .sidebar{
+            background-color: lightblue;
+            grid-area: sidebar;
+        }
+        .main{
+            background-color: lightgreen;
+            grid-area: main;
+        }   
+        .aside{
+            background-color: lightcoral;
+            grid-area: aside;
+        }
+        .footer{
+            background-color: lightgray;
+            grid-area: footer;
+        }
+        .states{
+            display: grid;
+            grid-template-columns: 100px 100px 100px 100px;
+            grid-template-rows: 100px 100px 100px 100px;
+            grid-template-areas:
+                "Kashmir Kashmir MP MP"
+                "Kashmir Kashmir MP MP"
+                "Raj Raj Raj Raj"
+                "Bihar Bihar UK UK";
+                gap: 12px;
+                height: 100vh;
+                background-color: black;
+                width: 450px;
+                height: 450px;
+                padding: 12px;
+            }
+            .Kashmir{
+                background-color: lightblue;
+                grid-area: Kashmir;
+            }
+            .MP{
+                background-color: lightgreen;
+                grid-area: MP;
+            }
+
+            .Raj{
+                background-color: lightcoral;
+                grid-area: Raj;
+            }
+            .Bihar{
+                background-color: lightgray;
+                grid-area: Bihar;
+            }
+            .UK{
+                background-color: lightyellow;
+                grid-area: UK;
+            }
+        </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="header"></div>
+        <div class="header"></div>
+        <div class="header"></div>
+        <div class="sidebar"></div>
+        <div class="main"></div>
+        <div class="aside"></div>
+        <div class="footer"></div>
+        <div class="footer"></div>
+        <div class="footer"></div>
+    </div>
+    <hr>
+    <hr>
+    <div class="states">
+        <div class="Kashmir"></div>
+        <div class="Kashmir"></div>
+        <div class="MP"></div>
+        <div class="MP"></div>
+        <div class="Raj"></div>
+        <div class="Bihar"></div>
+        <div class="Bihar"></div>
+        <div class="UK"></div>
+        <div class="UK"></div>
+    </div>
+</body>
+</html>
+
+<!-- 
+## diff between justify-items, align-items, place-items, justify-content, align-content, justify-self, align-self in css
+- `justify-items`: Aligns items along the row (horizontal) axis within their grid area.
+- `align-items`: Aligns items along the column (vertical) axis within their grid area
+- `place-items`: A shorthand property that sets both `justify-items` and `align-items` at the same time.
+- `justify-content`: Aligns the entire grid along the row (horizontal) axis within the
+    container.
+- `align-content`: Aligns the entire grid along the column (vertical) axis within the
+    container.
+- `justify-self`: Aligns a single item along the row (horizontal) axis within its
+    grid area.
+- `align-self`: Aligns a single item along the column (vertical) axis within its
+    grid area. -->

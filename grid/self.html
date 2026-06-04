@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid{
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-template-rows: 100px 100px 100px;
+            gap: 8px;
+            height: 350px;
+            border: 1px solid black;
+            width: 600px; 
+        }
+        .name{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 100px 100px 100px 100px;
+            /* gap: 8px; */
+            height: 450px;
+            /* border: 1px solid black; */
+            width: 400px; 
+        }
+
+        .sq{
+            height: 60px;
+            width: 60px;
+        }
+        
+        #it1{
+            background-color: lightcoral;
+            align-self: end;
+            justify-self: end;
+        }
+        #it2{
+            background-color:aqua;
+            align-self: center;
+            justify-self: center;
+        }
+        #it3{
+            background-color: lightgreen;
+            align-self: start;
+            justify-self: end;
+        }
+        #it4{
+            background-color: bisque;
+            align-self: center;
+            justify-self: start;
+        }
+        #it5{
+            background-color: lightpink;
+            align-self: center;
+            justify-self: end;
+        }
+        #it6{
+            background-color: lightseagreen;
+            align-self: center;
+            justify-self: start;
+        }
+        #it7{
+            background-color: lightseagreen;
+            align-self: end;
+            justify-self: start;
+        }
+        #it8{
+            background-color: limegreen ;
+            align-self: start;
+            justify-self: center;
+        }
+        #it9{
+            background-color: mediumpurple ;
+            align-self: center;
+            justify-self: end;
+        }
+        #id1{
+            background-color: turquoise ;
+        }
+        #id2{
+            background-color: turquoise ;
+        }
+        #id3{
+            background-color: turquoise ;
+        }
+        #id4{
+            background-color: turquoise ;
+        }
+        #id7{
+            background-color: turquoise ;
+        }
+        #id8{
+            background-color: turquoise ;
+        }
+        #id9{
+            background-color: turquoise ;
+        }
+        #id10{
+            background-color: turquoise ;
+        }
+        #id6{
+            background-color: turquoise ;
+        }
+        #id12{
+            background-color: turquoise ;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="sq" id="it1">1</div>
+        <div class="sq" id="it2">2</div>
+        <div class="sq" id="it3">3</div>
+        <div class="sq" id="it4">4</div>
+        <div class="sq" id="it5">5</div>
+        <div class="sq" id="it6">6</div>
+        <div class="sq" id="it7">7</div>
+        <div class="sq" id="it8">8</div>
+        <div class="sq" id="it9">9</div>
+    </div>
+    <div class="name">
+        <div class="sq1" id="id1"></div>
+        <div class="sq1" id="id2"></div>
+        <div class="sq1" id="id3"></div>
+        <div class="sq1" id="id4"></div>
+        <div class="sq1" id="id5"></div>
+        <div class="sq1" id="id6"></div>
+        <div class="sq1" id="id7"></div>
+        <div class="sq1" id="id8"></div>
+        <div class="sq1" id="id9"></div>
+        <div class="sq1" id="id10"></div>
+        <div class="sq1" id="id11"></div>
+        <div class="sq1" id="id12"></div>
+    </div>
+</body>
+</html>
