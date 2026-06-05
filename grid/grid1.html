@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .papa {
+            display: grid;
+            grid-template-columns: 130px 130px 130px 130px;
+            grid-template-rows: 50px 90px 200px 130px;
+            grid-template-areas: 
+                "ch1 ch2 ch2 ch2"
+                "ch1 ch3 ch4 ch6"
+                "ch1 ch7 ch7 ch8"
+                "ch1 ch9 ch10 ch11";
+            background-color: lightblue;
+            gap: 5px 2px;
+            width: 540px;
+            border: 1px solid rgb(255,255,255);
+        }
+        .ch1, .ch2, .ch3, .ch4, .ch6, .ch7, .ch8, .ch9, .ch10, .ch11 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .ch1 {
+            grid-area: ch1;
+            background-color: rgb(26, 6, 246);
+            border: 1px solid rgb(255,255,255);
+        }
+        .ch2 {
+            grid-area: ch2;
+            background-color: rgb(9, 246, 226);
+            border: 1px solid rgb(255,255,255);
+        }
+        .ch3 {
+            grid-area: ch3;
+            background-color: rgb(30, 154, 195);
+            border: 1px solid rgb(255,255,255);
+        }
+        .ch4 {
+            grid-area: ch4;
+            background-color: rgb(11, 219, 95);
+            border: 1px solid rgb(255,255,255);
+        }
+        .ch6 {
+            grid-area: ch6;
+            background-color: rgb(198, 95, 6);
+            border: 1px solid rgb(255,255,255);
+        }
+        .ch7 {
+            grid-area: ch7;
+            background-color: rgb(119, 10, 214);
+            border: 1px solid rgb(255,255,255);
+        }
+        .ch8 {
+            grid-area: ch8;
+            background-color: rgb(211, 12, 198);
+            border: 1px solid rgb(255,255,255);
+        }
+        .ch9 {
+            grid-area: ch9;
+            background-color: rgb(9, 149, 200);
+             border: 1px solid rgb(255,255,255);
+        }
+        .ch10 {
+            grid-area: ch10;
+            background-color: rgb(9, 149, 200);
+             border: 1px solid rgb(255,255,255);
+        }
+        .ch11 {
+            grid-area: ch11;
+            background-color: rgb(9, 149, 200);
+             border: 1px solid rgb(255,255,255);
+        }
+        .txt{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="papa">
+        <div class="ch1"><p class="txt">Sidebar</p></div>
+        <div class="ch2"><p class="txt">Top Navigation</p></div>
+        <div class="ch3"><p class="txt">Users</p></div>
+        <div class="ch4"><p class="txt">Revenue</p></div>
+        <div class="ch6"><p class="txt">Orders</p></div>
+        <div class="ch7"><p class="txt">Chart</p></div>
+        <div class="ch8"><p class="txt">Table</p></div>
+        <div class="ch9"><p class="txt">Widget 1</p></div>
+        <div class="ch10"><p class="txt">Widget 2</p></div>
+        <div class="ch11"><p class="txt">Widget 3</p></div>
+    </div>
+</body>
+</html>
